@@ -26,3 +26,57 @@ Characters and teams
 Insights from this analysis will help the marketing team design a new marketing strategy to convert casual riders into annual members.
 
 **Business Task**: How do annual members and casual riders use Cyclistic bikes differently?
+
+
+**Part one: Ask Phase** 
+General Objective of the analysis
+The general objective of this analysis is to provide insight on the difference between casual riders and annual members that will help marketing department design a marketing strategy that will convert casual riders to annual members
+
+Expected Results of the analysis
+Insight from this analysis will enable my team to design new marketing strategy to convert casual riders into annual members so as to guarantee Cyclistic company’s future success that is expected to depends on maximizing the number of annual memberships
+ 
+Key Stakeholders
+- The director of marketing and my manager (Lily Moreno)
+- Cyclistic executive team
+- Cyclistic marketing analytics team
+ 
+Business task to tackle: To identify the difference between casual riders and annual members
+
+Part two: Prepare Phase
+Data used for this analysis is located at Bucket loading...(divvy-tripdata.s3.amazonaws.com) 
+
+The data used for this analysis data has been made available by Motivate International Inc. under the specified license at this link https://divvybikes.com/data-license-agreement
+
+Data is from the fictional company Cyclistic's database It is a credible data for its first-hand data collected by the company and is updated on a monthly basis.
+Data in obtained from this source will be only used for analysis purposes.
+
+The data that are used for analysis are ROCCC which means they are Reliable, Original, Comprehensive, Current, Cited. This is because data is Reliable and is not biased, Its Original because it’s original public data, and its Comprehensive because not missing important information required for the analysis, it is also Current because its updated monthly and its Cited.
+
+
+#### Data Exploration
+I ran the queries for each column from left to right in order to determine the **data type** and to uncover any **missing values, outliers, inconsistencies, and errors** within the dataset. 
+
+The data set consists of **13 variables**, as shown in the following: <br>
+
+| **No.**|  **Variable**       |  **Description**                                        |
+|--------|------------------   | --------------------------------------------------------|
+| 1      | ride_id             | Unique ID assigned to each ride                         |
+| 2      | rideable_type       | classic, docked, or electric                            |
+| 3      | started_at          | Date and time at the start of trip                      |
+| 4      | ended_at            | Date and time at the end of trip                        |
+| 5      | start_station_name  | Name of the station where the ride journey started from |
+| 6      | start_station_id    | ID of the station where the ride journey started from   |
+| 7      | end_station_name    | Name of the station where the ride trip ended at        |
+| 8      | end_station_id      | ID of the station where the ride trip ended at          |
+| 9      | start_lat           | Latitude of starting station                            |
+| 10     | start_lng           | Longitude of starting station                           |
+| 11     | end_lat             | Latitude of ending station                              |
+| 12     | end_lng             | Longitude of ending station                             |                            
+| 13     | member_casual       | Type of membership of each rider                        |
+
+
+This data is organized in monthly basis. This analysis is done using the data of the previous twelve (12) months from January 2023 to December 2023. File names are saved by the following format YYYYMM-divvy-tripdata such i.e (202301-divvy-tripdata). All files (Monthly) saved in Comma Delimited format(CSV) and in each sheet.
+
+The data provided will be useful in answering the business questions.
+
+
