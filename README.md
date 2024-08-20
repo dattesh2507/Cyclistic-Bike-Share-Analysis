@@ -43,7 +43,7 @@ Key Stakeholders
 Business task to tackle: To identify the difference between casual riders and annual members
 
 Part two: Prepare Phase
-Data used for this analysis is located at Bucket loading...(divvy-tripdata.s3.amazonaws.com) 
+Data used for this analysis is located at Bucket loading...[divvy-tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) <br>
 
 The data used for this analysis data has been made available by Motivate International Inc. under the specified license at this link https://divvybikes.com/data-license-agreement
 
@@ -78,5 +78,48 @@ The data set consists of **13 variables**, as shown in the following: <br>
 This data is organized in monthly basis. This analysis is done using the data of the previous twelve (12) months from January 2023 to December 2023. File names are saved by the following format YYYYMM-divvy-tripdata such i.e (202301-divvy-tripdata). All files (Monthly) saved in Comma Delimited format(CSV) and in each sheet.
 
 The data provided will be useful in answering the business questions.
+
+**Part three: Process Phase** 
+
+To analyse the data I used Oracle SQL and Excel
+Data processing for analysis 
+1.  I downloaded the data from January 2023 to December 2023
+2.  Load twelve (12) months data
+3.  Created a table named Bike Share data in Power BI
+4. Imported the data from excel to  Bike Share data table
+5.Drop all “NA” columns
+6.Due to the large number of datasets, I choose to work with both Spreadsheet and Oracle SQL.
+7.Document the cleaning process
+a. Create a column called “ride_length.” Calculate the length of each ride by subtracting the column “started_at” from the column “ended_at”.
+b. Add day_of_week, and Month. 
+c. Separate the dates into month, day, year, and create a column called “day_of_week”.
+
+1. Calculate the  ride_length for all
+- Ensure you have columns for started_at and ended_at.
+- Name your column ride_length and use the following formula:
+- ([ended_at] - [started_at])
+
+2. Calculate Day of the Week
+- Name your column day_of_week and use the following formula:
+- Date.DayOfWeek([started_at], Day.Monday)
+- This will create a column with values from 0 (Monday) to 6 (Sunday).
+
+**Part Four: Analysis Phase**
+
+Summary of the analysis
+Data were formatted, organized and filtered monthly, and weekly and all data were filtered based on the objective of the first question to differentiate casual riders from members
+
+The analysis shows that 
+i. The mean length of the a ride is 17:56:58,
+ii.The median length of the a ride is 00:10:02,
+iii. The max length of the a ride is17:47:15
+iv. Mode day of the week SATURDAY
+v.  Number of rides for members 59.7% and casual riders 40.3%. Members rides more than casual riders
+  
+
+
+**Tools:** <br>
+- Data cleaning & processing -  Excel on Power Query 
+- Data visualization - [Power BI](https://app.powerbi.com/links/KQ76lsjF05?ctid=4b469bf3-7edf-4593-9b77-e4807953c730&pbi_source=linkShare)
 
 
