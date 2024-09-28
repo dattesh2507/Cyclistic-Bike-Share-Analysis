@@ -1,12 +1,11 @@
 # Cyclistic-Bike-Share-Analysis
 
-First Case study research (April, 2023)
 
 **Case Study: How Does a Bike-Share Navigate Speedy Success?**
 
 ### Introduction
 
-This is the first case study among the three case study I will do in my capstone project as the requirement for completion of the Google Data Analytics Certificate. As a junior data analyst in this case study I will analyse data of the fictional company called “Cyclistic” provided by the Course. To answer a business task; Cyclistic’s historical trip data is used to analyse and identify trends of the previous twelve (12) Months from April 2022 to March 2023.
+This is the first case study among the three case study I will do in my capstone project as the requirement for completion of the Google Data Analytics Certificate. As a junior data analyst in this case study I will analyse data of the fictional company called “Cyclistic” provided by the Course. To answer a business task; Cyclistic’s historical trip data is used to analyse and identify trends of the previous twelve (12) Months from January 2023 to December 2023.
 
 ### About the company
 **Cyclistic** a fictional company having casual riders and members
